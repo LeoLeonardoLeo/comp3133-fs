@@ -15,7 +15,6 @@ mongoose.connect(DB_CONNECTION, {
     console.log('Error Mongodb connection');
 });
 
-// Mount the restaurant routes
 app.use('/restaurants', restaurantRoutes);
 
 app.listen(8081, () => { 
